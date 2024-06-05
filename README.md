@@ -9,3 +9,6 @@ shiny create
 select basic app
 
 shiny run app.py
+
+
+currently get an error: modal-http: internal server error: status Failure: TimeoutError('Waited too long for port 8000 to start accepting connections. Make sure the web server is listening on all interfaces, or adjust `startup_timeout`.') when running modal serve 
