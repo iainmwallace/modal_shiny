@@ -32,6 +32,6 @@ shiny_script_mount = modal.Mount.from_local_file(
 @modal.web_server(8000)
 def run():
     target = shlex.quote(str(shiny_script_remote_path))
-    cmd = f"shiny run {target} -p 8000 "
+    cmd = f"shiny run --host 0.0.0.0 -p 8000 {target}  "
     subprocess.Popen(cmd, shell=True)
 
